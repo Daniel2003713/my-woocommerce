@@ -5,10 +5,10 @@
  * Handles authentication, registering, resetting passwords, forgot password,
  * and other user handling.
  *
- * @package WordPress
+ * @package WordPressss
  */
 
-/** Make sure that the WordPress bootstrap has run before continuing. */
+/** Makes sure that the WordPress bootstrap has run before continuing. */
 require __DIR__ . '/wp-load.php';
 
 // Redirect to HTTPS login if forced to use SSL.
@@ -21,6 +21,7 @@ if ( force_ssl_admin() && ! is_ssl() ) {
 		exit;
 	}
 }
+
 
 /**
  * Outputs the login page header.
